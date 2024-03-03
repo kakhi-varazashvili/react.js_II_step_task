@@ -1,0 +1,54 @@
+.image-modal {
+  display: flex;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+
+  /* overflow: auto; */
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.8);
+  /* flex-direction: column; */
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0 auto;
+}
+.modal-body {
+  max-width: 650px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal-content {
+  max-height: min-content;
+  display: flex;
+  max-height: 80%;
+}
+.modal-body img {
+  width: 100%;
+  height: 100%;
+}
+.modal-header {
+  height: 100%;
+}
+.image-info,
+.image-info span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 5px;
+  width: 100%;
+}
+.image-info span {
+  width: 100px;
+  font-size: 24px;
+  height: 50px;
+  color: aliceblue;
+  margin: 10px;
+}
+.image-info svg {
+  margin-right: 10px;
+}
