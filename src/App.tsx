@@ -1,13 +1,10 @@
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
-// import History from "./History";
-
 import { useState, ChangeEvent } from "react";
 import { useFetchData } from "./api/hooks/useFetchData";
 
 import loading from "./assets/loading.gif";
 import "./App.css";
 import { Modal } from "./components";
-import Nav from "./Nav";
+// import Nav from "./Nav";
 
 type UnsplashPhoto = {
   id: string;
@@ -63,16 +60,6 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<App />}>
-            <Route index element={<App />} />
-            <Route path="History" element={<History />} />
-       
-          </Route>
-        </Routes>
-      </BrowserRouter> */}
-
       <Modal
         isModalOpen={isModalOpen}
         handleModalClose={handleModalClose}
@@ -82,8 +69,6 @@ const App = () => {
         numberOfViews={modalData.numberOfViews}
         numberOfDownloads={modalData.numberOfDownloads}
       />
-
-      {/* <Nav /> */}
 
       <div className="header-box">
         <input
